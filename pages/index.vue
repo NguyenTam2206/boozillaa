@@ -1,49 +1,28 @@
 <template>
-  <v-carousel
-    cycle
-    height="600"
-    hide-delimiter-background
-    show-arrows-on-hover
-  >
-    <v-carousel-item
-      v-for="(slide, i) in slides"
-      :key="i"
-    >
-      <v-sheet
-        :color="colors[i]"
-        height="100%"
-      >
-        <v-row
-          class="fill-height"
-          align="center"
-          justify="center"
-        >
-          <div class="display-3">{{ slide }} Slide</div>
-        </v-row>
-      </v-sheet>
-    </v-carousel-item>
-  </v-carousel>
+  <div>
+    <Banner />
+    <v-container class="mt-5">
+      <v-row class="d-flex">
+        <v-col cols="12" md="6">
+          <p class="display-2 text-center">Boozilla Store</p>
+          <p>Tại BOOzilla, thời trang và văn hóa đại chúng sẽ hòa quyện làm một. Bạn sẽ tìm thấy ở “BOOzilla” những món phục trang được truyền cảm hứng bởi các tượng đài văn hóa lớn trên toàn thế giới - thứ tinh thần đẹp đẽ mà BOO muốn truyền tải thông qua dự án “BOOzilla”</p>
+        </v-col>
+        <v-col cols="12" md="6">
+          <div style="width: 100%; height: 85px; background-color : orange" class="mt-md-10">img</div>
+        </v-col>
+      </v-row>
+      <ImgSlide />
+    </v-container>
+  </div>
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        colors: [
-          'indigo',
-          'warning',
-          'pink darken-2',
-          'red lighten-1',
-          'deep-purple accent-4',
-        ],
-        slides: [
-          'First',
-          'Second',
-          'Third',
-          'Fourth',
-          'Fifth',
-        ],
-      }
-    },
+import Banner from "@/components/HomePage/Banner";
+import ImgSlide from "@/components/HomePage/ImgSlide";
+export default {
+  components: {
+    Banner,
+    ImgSlide
   }
+};
 </script>

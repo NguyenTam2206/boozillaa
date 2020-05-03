@@ -3,7 +3,7 @@
     <client-only>
       <v-app-bar color="white" dense light height="55" :elevate-on-scroll="true" elevation="4" fixed>
         <!--HamburgerBtn-->
-        <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="hamburger = !hamburger"></v-app-bar-nav-icon>
+        <v-app-bar-nav-icon class="hidden-lg-and-up" @click.stop="hamburger = !hamburger"></v-app-bar-nav-icon>
 
         <!--Logo-->
         <nuxt-link to="/">
@@ -12,7 +12,7 @@
 
         <!--Tags on Desktop-->
         <v-btn
-          class="mx-3 px-1 text-capitalize hidden-sm-and-down"
+          class="mx-3 px-1 text-capitalize hidden-md-and-down"
           light
           outlined
           height="27"
@@ -48,8 +48,8 @@
         </v-menu>
 
         <!--CartBtn-->
-        <v-btn icon>
-          <v-icon @click.stop="drawer = !drawer">mdi-cart-outline</v-icon>
+        <v-btn icon @click.stop="drawer = !drawer">
+          <v-icon>mdi-cart-outline</v-icon>
           <v-badge color="red" content="3" class="ml-n2 mt-n3"></v-badge>
         </v-btn>
       </v-app-bar>
@@ -69,7 +69,7 @@
     </div>
 
     <!--Drawer Cart-->
-    <v-navigation-drawer v-model="drawer" absolute temporary right width="280">
+    <v-navigation-drawer v-model="drawer" fixed temporary right width="280">
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title>
