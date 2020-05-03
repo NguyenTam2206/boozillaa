@@ -2,27 +2,25 @@
   <v-app>
     <Navigation />
     <v-content>
-      <v-container>
-        <nuxt />
-      </v-container>
+      <nuxt />
     </v-content>
+    <Footer />
   </v-app>
 </template>
 
 <script>
-import Navigation from '@/components/Navigation/Navigation'
+import Navigation from "@/components/Navigation/Navigation";
+import Footer from "@/components/Footer/Footer";
 export default {
   data() {
-    return {
-      
-    };
+    return {};
   },
-  components : {
+  components: {
     Navigation,
+    Footer
   }
 };
 </script>
 
 <style scoped>
-
 </style>
