@@ -14,19 +14,44 @@
       <ImgSlide />
       <v-row style="margin: 40px 0;">
         <v-col class="text-center">
-        <span>BOO X ONE PIECE STAMPEDE</span>
-        <h2>LỄ HỘI HẢI TẶC</h2>
+          <span>BOO X ONE PIECE STAMPEDE</span>
+          <h2>LỄ HỘI HẢI TẶC</h2>
         </v-col>
       </v-row>
       <v-row>
         <v-col cols="12" md="6">
-          <img src="@/assets/imgs/bannerlefthome.webp" alt="bannerlefthome">
+          <img
+            src="@/assets/imgs/bannerlefthome.webp"
+            alt="bannerlefthome"
+            style="max-width: 100%; padding-top: 12px;"
+          />
         </v-col>
-        <v-col cols=12 md="6">
-
+        <v-col cols="12" md="6">
+          <v-row>
+            <v-col cols="6" v-for="(product, i) in 4" :key="i">
+              <Product />
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
+      <v-row justify="center" style="margin-bottom: 40px;">
+        <v-btn outlined width="300">Xem Thêm</v-btn>
+      </v-row>
     </v-container>
+    <BannerBottom />
+    <v-row style="margin: 40px 0;">
+      <v-col class="text-center">
+        <span>BOO x STARWARS</span>
+        <h2>STAR WARS - THE RISE OF SKYWALKER</h2>
+      </v-col>
+    </v-row>
+    <ProductsList quantity="8"/>
+    <v-row style="margin: 40px 0;">
+      <v-col class="text-center">
+        <h2>ĐỒ CHƠI, MÔ HÌNH</h2>
+      </v-col>
+    </v-row>
+    <ProductsList quantity="8"/>
   </div>
 </template>
 
@@ -34,12 +59,18 @@
 import Banner from "@/components/HomePage/Banner";
 import ImgSlide from "@/components/HomePage/ImgSlide";
 import BrandSlide from "@/components/HomePage/BrandSlide";
+import Product from "@/components/Products/Product";
+import BannerBottom from "@/components/HomePage/BannerBottom";
+import ProductsList from "@/components/Products/ProductsList";
 
 export default {
   components: {
     Banner,
     ImgSlide,
-    BrandSlide
+    BrandSlide,
+    Product,
+    BannerBottom,
+    ProductsList
   }
 };
 </script>
