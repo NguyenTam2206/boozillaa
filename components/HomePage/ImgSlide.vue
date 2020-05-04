@@ -24,12 +24,12 @@ export default {
   data() {
     return {
       items: [
-        { title: "Hulk", class: "img-hulk", link: "/collections/hulk" },
-        { title: "Iron Man", class: "img-ironman", link: "/collections/ironman" },
-        { title: "Captain American", class: "img-captain", link: "/collections/captiain-american" },
-        { title: "Thor", class: "img-thor", link: "/collections/thor" },
-        { title: "Spider Man", class: "img-spiderman", link: "/collections/spiderman" },
-        { title: "Venom", class: "img-venom", link: "/collections/venom" }
+        { title: "Hulk", class: "img-hulk", link: "/collection/hulk" },
+        { title: "Iron Man", class: "img-ironman", link: "/collection/ironman" },
+        { title: "Captain American", class: "img-captain", link: "/collection/captiain-american" },
+        { title: "Thor", class: "img-thor", link: "/collection/thor" },
+        { title: "Spider Man", class: "img-spiderman", link: "/collection/spiderman" },
+        { title: "Venom", class: "img-venom", link: "/collection/venom" }
       ],
       swiperOption: {
         slidesPerView: 3,

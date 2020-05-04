@@ -39,10 +39,10 @@
           </template>
           <v-list>
             <v-list-item>
-              <v-list-item-title @click="$router.push('/account')" class="log">Sign In / Account</v-list-item-title>
+              <v-list-item-title @click="$router.push('/login')" class="log">Sign In / Account</v-list-item-title> <!--to do-->
             </v-list-item>
             <v-list-item>
-              <v-list-item-title @click="()=>{}" class="log">Log Out</v-list-item-title>
+              <v-list-item-title @click="()=>{}" class="log">Log Out</v-list-item-title> <!--to do-->
             </v-list-item>
           </v-list>
         </v-menu>
@@ -191,34 +191,34 @@ export default {
         {
           title: "Bản quyền",
           isShow: false,
-          link: "/collections/ban-quyen",
+          link: "/collection/ban-quyen",
           childContents: true
         },
         {
           title: "Quần áo",
           isShow: false,
-          link: "/collections/quan-ao",
+          link: "/catelogy/quan-ao",
           childContents: true
         },
         {
           title: "Phụ kiện thời trang",
           isShow: false,
-          link: "/collections/phu-kien",
+          link: "/catelogy/phu-kien",
           childContents: false
         },
         {
           title: "Đồ chơi sưu tầm",
           isShow: false,
-          link: "/collections/do-choi",
+          link: "/catelogy/do-choi",
           childContents: false
         },
         {
           title: "Văn phòng phẩm",
           isShow: false,
-          link: "/collections/van-phong-pham",
+          link: "/catelogy/van-phong-pham",
           childContents: false
         },
-        { title: "Sự kiện", isShow: false, link: "/blogs" }
+        { title: "Sự kiện", isShow: false, link: "/page/blogs" }
       ]
     };
   },
