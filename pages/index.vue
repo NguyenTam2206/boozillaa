@@ -45,13 +45,26 @@
         <h2>STAR WARS - THE RISE OF SKYWALKER</h2>
       </v-col>
     </v-row>
-    <ProductsList quantity="8"/>
+    <ProductsList quantity="8" />
+    <v-row justify="center" style="margin-bottom: 40px;">
+      <v-btn outlined width="300">Xem Thêm</v-btn>
+    </v-row>
     <v-row style="margin: 40px 0;">
       <v-col class="text-center">
         <h2>ĐỒ CHƠI, MÔ HÌNH</h2>
       </v-col>
     </v-row>
-    <ProductsList quantity="8"/>
+    <ProductsList quantity="8" />
+    <v-row justify="center" style="margin-bottom: 40px;">
+      <v-btn outlined width="300">Xem Thêm</v-btn>
+    </v-row>
+    <v-row style="margin: 40px 0;">
+      <v-col class="text-center">
+        <span>Follow Our Instagram</span>
+        <a href="https://www.instagram.com/boozilla.vn/" target="_blank" style="text-decoration : none; color : black"><h2>@BOOZILLA.VN</h2></a>
+      </v-col>
+    </v-row>
+    <InstaBanner />
   </div>
 </template>
 
@@ -62,6 +75,7 @@ import BrandSlide from "@/components/HomePage/BrandSlide";
 import Product from "@/components/Products/Product";
 import BannerBottom from "@/components/HomePage/BannerBottom";
 import ProductsList from "@/components/Products/ProductsList";
+import InstaBanner from "@/components/HomePage/InstaBanner";
 
 export default {
   components: {
@@ -70,7 +84,8 @@ export default {
     BrandSlide,
     Product,
     BannerBottom,
-    ProductsList
+    ProductsList,
+    InstaBanner
   }
 };
 </script>
