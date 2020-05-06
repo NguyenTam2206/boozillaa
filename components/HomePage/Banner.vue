@@ -14,7 +14,7 @@
         height="100%"
       >
         <v-row
-          class="fill-height"
+          class="fill-height mx-0"
           align="center"
           justify="center"
         >

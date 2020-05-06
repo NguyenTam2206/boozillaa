@@ -21,7 +21,7 @@
       <v-row>
         <v-col cols="12" md="6">
           <img
-            src="@/assets/imgs/bannerlefthome.webp"
+            src="@/assets/imgs/bannerlefthome.png"
             alt="bannerlefthome"
             style="max-width: 100%; padding-top: 12px;"
           />

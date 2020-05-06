@@ -14,7 +14,7 @@
             </v-col>
             <v-col cols="12" md="6">
                 <div>
-                    <img src="../../assets/imgs/bannerbottomhome.webp" alt="banner2" style="max-width: 100%">
+                    <img src="../../assets/imgs/bannerbottomhome.png" alt="banner2" style="max-width: 100%">
                 </div>
             </v-col>
           </v-row>
@@ -26,7 +26,7 @@
 
 <style scoped>
 .banner-home-2 {
-  background: url(//theme.hstatic.net/1000405081/1000541634/14/link_banner_collection_home_2.png?v=1243);
+  background: url('../../assets/imgs/bannerbottombg.png');
 
   background-position: center;
   background-size: auto;

@@ -79,21 +79,21 @@ export default {
 }
 
 .img-hulk {
-  background-image: url("../../assets/imgs/hulk.webp");
+  background-image: url("../../assets/imgs/hulk.png");
 }
 .img-ironman {
-  background-image: url("../../assets/imgs/ironman.webp");
+  background-image: url("../../assets/imgs/ironman.png");
 }
 .img-captain {
-  background-image: url("../../assets/imgs/captain.webp");
+  background-image: url("../../assets/imgs/captain.png");
 }
 .img-thor {
-  background-image: url("../../assets/imgs/thor.webp");
+  background-image: url("../../assets/imgs/thor.png");
 }
 .img-spiderman {
-  background-image: url("../../assets/imgs/spiderman.webp");
+  background-image: url("../../assets/imgs/spiderman.png");
 }
 .img-venom {
-  background-image: url("../../assets/imgs/venom.webp");
+  background-image: url("../../assets/imgs/venom.png");
 }
 </style>>

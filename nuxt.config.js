@@ -77,7 +77,7 @@ export default {
   */
   build: {
     /*
-    ** You can extend webpack config here
+    ** You can extend pngack config here
     */
     extend (config, ctx) {
     }

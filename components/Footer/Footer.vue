@@ -46,7 +46,7 @@
         </v-col>
       </v-row>
       <a href="/">
-        <img src="../../assets/imgs/logo-bct.webp" style="width: 100px;" alt="bct" />
+        <img src="../../assets/imgs/logo-bct.png" style="width: 100px;" alt="bct" />
       </a>
     </v-container>
   </v-container>
@@ -54,7 +54,7 @@
 
 <style scoped>
 .footerbg {
-  background-image: url("../../assets/imgs/footerbg.webp");
+  background-image: url("../../assets/imgs/footerbg.png");
   background-size: cover;
   background-position: center;
   width: 100%;

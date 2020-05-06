@@ -17,8 +17,8 @@ export default {
     return {
       onHover: false,
       product: {
-        img: require("../../assets/imgs/product.webp"),
-        imgOnHover: require("../../assets/imgs/producthoverimg.webp"),
+        img: require("../../assets/imgs/product.png"),
+        imgOnHover: require("../../assets/imgs/producthoverimg.png"),
         title: "Áo Phông Boo ABCDEF",
         prize: "399.000 đ"
       }
