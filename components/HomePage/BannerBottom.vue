@@ -10,11 +10,11 @@
                 <br />THE RISE OF SKYWALKER
               </h1>
               <p class="my-5">Star Wars editorial: Huyền thoại đã đi đến hồi kết nhưng câu chuyện sẽ sống mãi. Tham gia vào hành trình bất tận của Star Wars, lật lại những trang sử hào hùng của nhà Skywalker để cùng nhau quật khởi cho một lần... và mãi mãi. Bộ sưu tập BOO x Star Wars cũng đã sẵn sàng cho mỗi chúng ta, để bước tới điểm cuối hành trình mang tên: “The Rise of Skywalker”!</p>
-              <v-btn outlined>Xem Ngay</v-btn>
+              <v-btn outlined @click="$router.push('/collection/the-rise-of-skywalker')">Xem Ngay</v-btn>
             </v-col>
             <v-col cols="12" md="6">
                 <div>
-                    <img src="../../assets/imgs/bannerbottomhome.png" alt="banner2" style="max-width: 100%">
+                    <img src="../../assets/imgs/bannerbottomhome.png" alt="banner2" style="max-width: 100%; cursor: pointer;"  @click="$router.push('/collection/the-rise-of-skywalker')">
                 </div>
             </v-col>
           </v-row>

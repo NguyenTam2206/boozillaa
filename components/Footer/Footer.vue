@@ -12,13 +12,13 @@
           </form>
         </v-col>
         <v-col col="12" md="5" class="text-center">
-          <a href="/" class="link">
+          <a href="https://www.facebook.com/boozilla.vn/" target="_blank" class="link">
             <v-icon class="sociallogo">mdi-facebook</v-icon>
           </a>
-          <a href="/" class="link">
+          <a href="https://www.instagram.com/boozilla.vn/" target="_blank" class="link">
             <v-icon class="sociallogo">mdi-instagram</v-icon>
           </a>
-          <a href="/" class="link">
+          <a href="https://www.youtube.com/channel/UCOWxk3gWGE4RL3wcAeBCFNA" target="_blank" class="link">
             <v-icon class="sociallogo">mdi-youtube</v-icon>
           </a>
         </v-col>
@@ -26,26 +26,26 @@
       <v-row>
         <v-col cols="12" md="4">
           <p style="font-size: 25px; color : white">Về Boozilla</p>
-          <p>Giới thiệu</p>
-          <p>Cửa hàng</p>
-          <p>Bản quyền</p>
+          <p><nuxt-link to="/" class="link">Giới thiệu</nuxt-link></p>
+          <p><nuxt-link to="/" class="link">Cửa hàng</nuxt-link></p>
+          <p><nuxt-link to="/" class="link">Bản quyền</nuxt-link></p>
         </v-col>
         <v-col cols="12" md="4">
           <p style="font-size: 25px; color : white">Thương hiệu Boo</p>
-          <p>BOO</p>
-          <p>BOOZilla</p>
-          <p>BOOLAAB</p>
-          <p>BOOShirt</p>
+          <p><nuxt-link to="/" class="link">BOO</nuxt-link></p>
+          <p><nuxt-link to="/" class="link">BOOZilla</nuxt-link></p>
+          <p><nuxt-link to="/" class="link">BOOLAAB</nuxt-link></p>
+          <p><nuxt-link to="/" class="link">BOOShirt</nuxt-link></p>
         </v-col>
         <v-col cols="12" md="4">
           <p style="font-size: 25px; color: white">Chính sách</p>
-          <p>Chính sách mua hàng</p>
-          <p>Chính sách đổi trả</p>
-          <p>Chính sách bảo hành</p>
-          <p>Bảo mật thông tin</p>
+          <p><nuxt-link to="/" class="link">Chính sách mua hàng</nuxt-link></p>
+          <p><nuxt-link to="/" class="link">Chính sách đổi trả</nuxt-link></p>
+          <p><nuxt-link to="/" class="link">Chính sách bảo hành</nuxt-link></p>
+          <p><nuxt-link to="/" class="link">Bảo mật thông tin</nuxt-link></p>
         </v-col>
       </v-row>
-      <a href="/">
+      <a href="http://online.gov.vn/Home/WebDetails/32272" target="_blank">
         <img src="../../assets/imgs/logo-bct.png" style="width: 100px;" alt="bct" />
       </a>
     </v-container>
@@ -98,6 +98,11 @@ input {
 
 .link {
   text-decoration: none;
+  color :  rgb(207, 207, 207);
+}
+
+.link:hover {
+  color : white
 }
 
 p {

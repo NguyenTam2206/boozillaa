@@ -4,7 +4,7 @@
     <v-container class="mt-5">
       <v-row class="d-flex">
         <v-col cols="12" md="6">
-          <p class="display-2 text-center">Boozilla Store</p>
+          <p class="text-center text-uppercase" style="font-size: 36px; font-weight: bold">Boozilla Store</p>
           <p>Tại BOOzilla, thời trang và văn hóa đại chúng sẽ hòa quyện làm một. Bạn sẽ tìm thấy ở “BOOzilla” những món phục trang được truyền cảm hứng bởi các tượng đài văn hóa lớn trên toàn thế giới - thứ tinh thần đẹp đẽ mà BOO muốn truyền tải thông qua dự án “BOOzilla”</p>
         </v-col>
         <v-col cols="12" md="6">
@@ -23,7 +23,8 @@
           <img
             src="@/assets/imgs/bannerlefthome.png"
             alt="bannerlefthome"
-            style="max-width: 100%; padding-top: 12px;"
+            style="max-width: 100%; padding-top: 12px; cursor: pointer;"
+            @click="$router.push('/collection/one-piece-stampede')"
           />
         </v-col>
         <v-col cols="12" md="6">

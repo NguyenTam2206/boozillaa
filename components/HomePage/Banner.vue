@@ -1,49 +1,18 @@
 <template>
-  <v-carousel
-    cycle
-    height="650"
-    hide-delimiter-background
-    show-arrows-on-hover
-  >
-    <v-carousel-item
-      v-for="(slide, i) in slides"
-      :key="i"
-    >
-      <v-sheet
-        :color="colors[i]"
-        height="100%"
-      >
-        <v-row
-          class="fill-height mx-0"
-          align="center"
-          justify="center"
-        >
-          <div class="display-3">{{ slide }} Slide</div>
-        </v-row>
-      </v-sheet>
-    </v-carousel-item>
+  <v-carousel cycle height="auto" hide-delimiter-background show-arrows-on-hover>
+    <v-carousel-item v-for="(slide, i) in slides" :key="i" :src="slide.src"></v-carousel-item>
   </v-carousel>
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        colors: [
-          'indigo',
-          'warning',
-          'pink darken-2',
-          'red lighten-1',
-          'deep-purple accent-4',
-        ],
-        slides: [
-          'First',
-          'Second',
-          'Third',
-          'Fourth',
-          'Fifth',
-        ],
-      }
-    },
+export default {
+  data() {
+    return {
+      slides: [
+        { src: require("../../assets/imgs/bannerslide1.png") },
+        { src: require("@/assets/imgs/bannerslide2.png") }
+      ]
+    };
   }
+};
 </script>
