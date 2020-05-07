@@ -1,5 +1,5 @@
 <template>
-  <v-chip v-if="chip" class="ma-2" close @click:close="close" :color="color" text-color="white">
+  <v-chip v-if="chip" class="ma-2" close @click:close="close" :color="color" outlined>
     <slot></slot>
   </v-chip>
 </template>
