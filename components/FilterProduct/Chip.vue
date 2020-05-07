@@ -1,27 +1,27 @@
 <template>
-    <v-chip v-if="chip" class="ma-2" close @click:close="close" color="green" text-color="white">
-        <slot></slot>
-    </v-chip>
+  <v-chip v-if="chip" class="ma-2" close @click:close="close" :color="color" text-color="white">
+    <slot></slot>
+  </v-chip>
 </template>
 
 <script>
 export default {
   props: {
-      name : {
-          type : String,
-          require : true
-      }
+    color: {
+      type : String,
+      required : true
+    },
   },
   data() {
     return {
       chip: true
     };
   },
-  methods : {
-      close() {
-          this.chip = false
-          this.$emit('closechip')
-      }
+  methods: {
+    close() {
+      this.chip = false;
+      this.$emit("closechip");
+    }
   }
 };
 </script>

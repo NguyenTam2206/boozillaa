@@ -57,16 +57,16 @@
         </v-list>
       </v-menu>
     </v-row>
-    <!-- <Chip v-for="(keyword,i) in keywords" :key="i" @closechip="closechip(keyword[0])">{{keyword[0]}}</Chip> -->
+    <ChipList />
   </v-container>
 </template>
 
 <script>
-import Chip from "./Chip";
+import ChipList from './ChipList';
 
 export default {
   components: {
-    Chip
+    ChipList
   },
   props : {
     rangeFilter : {
@@ -180,38 +180,6 @@ export default {
       deep : true
     },
 
-  },
-  computed: {
-    fitler() {
-      let filter = {};
-      let priceOption = this.prices.filter(e => e.checked === true);
-      let priceKey = priceOption.map(e => e.title);
-      if (priceKey.length > 0) {
-        filter = { ...filter, price: [...priceKey] };
-      }
-
-      let typeOption = this.types.filter(e => e.checked === true);
-      let typeKey = typeOption.map(e => e.title);
-      if (typeKey.length > 0) {
-        filter = { ...filter, type: [...typeKey] };
-      }
-
-      let colorOption = this.colors.filter(e => e.checked === true);
-      let colorKey = colorOption.map(e => e.title);
-      if (colorKey.length > 0) {
-        filter = { ...filter, color: [...colorKey] };
-      }
-
-      let characterOption = this.characters.filter(e => e.checked === true);
-      let characterKey = characterOption.map(e => e.title);
-      if (characterKey.length > 0) {
-        filter = { ...filter, character: [...characterKey] };
-      }
-
-      //to do with store
-      this.$store.dispatch("getProducts", filter);
-      return filter;
-    },
   },
 };
 </script>
