@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <Navigation />
-    <v-content>
+    <v-content style="margin-top: 55px;">
       <nuxt />
     </v-content>
     <Footer />
