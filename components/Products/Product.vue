@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto" max-width="100%" flat>
+  <v-card class="mx-auto" max-width="100%" flat @click="$router.push('/product/aaa')">
     <!-- <div @mouseover="onHover = true" @mouseleave="onHover = false">
       <v-img v-if="!onHover" class="white--text align-end" :src="product.img" height="auto"></v-img>
       <v-img v-if="onHover" class="white--text align-end" :src="product.imgOnHover" height="auto"></v-img>

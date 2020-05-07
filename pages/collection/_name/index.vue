@@ -1,3 +1,3 @@
 <template>
-    <h1>This is collection/ {{$route.params.name}}</h1>
+    <h1 style="margin-top: 70px;">This is collection/ {{$route.params.name}}</h1>
 </template>

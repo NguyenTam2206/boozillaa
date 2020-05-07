@@ -11,7 +11,7 @@
             </div>
           </form>
         </v-col>
-        <v-col col="12" md="5" class="text-center">
+        <v-col col="12" md="5" class="text-md-center">
           <a href="https://www.facebook.com/boozilla.vn/" target="_blank" class="link">
             <v-icon class="sociallogo">mdi-facebook</v-icon>
           </a>

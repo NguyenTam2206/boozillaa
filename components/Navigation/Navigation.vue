@@ -235,7 +235,7 @@ export default {
 
 <style scoped>
 .hoverTagBox {
-  background-color: orange;
+  background-color: white;
   height: 300px;
   position: fixed;
   top: 55px;

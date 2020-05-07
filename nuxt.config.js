@@ -81,5 +81,8 @@ export default {
     */
     extend (config, ctx) {
     }
-  }
+  },
+  env: {
+    apiUrl : 'http://api-boozilla.bazic.vn/' //process.env.apiUrl
+  },
 }
