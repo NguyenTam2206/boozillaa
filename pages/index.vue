@@ -46,6 +46,7 @@
         <h2>STAR WARS - THE RISE OF SKYWALKER</h2>
       </v-col>
     </v-row>
+    <v-container>
     <ProductsList quantity="8" />
     <v-row justify="center" style="margin-bottom: 40px;">
       <v-btn outlined width="300">Xem Thêm</v-btn>
@@ -59,6 +60,7 @@
     <v-row justify="center" style="margin-bottom: 40px;">
       <v-btn outlined width="300">Xem Thêm</v-btn>
     </v-row>
+    </v-container>
     <v-row style="margin: 40px 0;">
       <v-col class="text-center">
         <span>Follow Our Instagram</span>
