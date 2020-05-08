@@ -1,6 +1,7 @@
 @font-face {
     font-family: RoobertBoo;
     src: url('../RoobertBOO/RoobertBOO-Regular.ttf');
+    font-display: swap;
 }
 
 * {

@@ -57,6 +57,7 @@ export default {
   ** https://github.com/nuxt-community/vuetify-module
   */
   vuetify: {
+    treeShake: true, //optimize
     theme: {
       // dark: true,
       // themes: {
@@ -77,12 +78,14 @@ export default {
   */
   build: {
     /*
-    ** You can extend pngack config here
+    ** You can extend webpack config here
     */
-    extend (config, ctx) {
+    analyze: true, //optimize
+    extend(config, ctx) {
+
     }
   },
   env: {
-    apiUrl : 'http://api-boozilla.bazic.vn/' //process.env.apiUrl
+    apiUrl: 'http://api-boozilla.bazic.vn/' //process.env.apiUrl
   },
 }
