@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link to="/collection/ban-quyen">
+  <nuxt-link to="/collection/disney">
     <div class="brand-wrap mt-md-10 mb-10">
       <img src="../../assets/imgs/brandslide1.png" class="brand photoLogo upAnim1" alt="brandslide" />
       <img src="../../assets/imgs/brandslide2.png" class="brand photoLogo upAnim2" alt="brandslide" />

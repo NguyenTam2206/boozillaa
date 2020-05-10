@@ -88,4 +88,8 @@ export default {
   env: {
     apiUrl: 'http://api-boozilla.bazic.vn/' //process.env.apiUrl
   },
+  router: {
+    linkActiveClass: 'active-link',
+    linkExactActiveClass: 'exact-active-link',
+  }
 }

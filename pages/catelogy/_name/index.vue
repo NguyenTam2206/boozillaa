@@ -1,5 +1,5 @@
 <template>
-  <v-container style="margin-top : 55px;">
+  <v-container>
     <!--BreadCrumb-->
     <BCCatelogy />
     <h1 class="text-center my-5">{{title}}</h1>

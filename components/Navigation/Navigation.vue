@@ -191,7 +191,7 @@ export default {
         {
           title: "Bản quyền",
           isShow: false,
-          link: "/collection/ban-quyen",
+          link: "/collection/disney",
           childContents: true
         },
         {
