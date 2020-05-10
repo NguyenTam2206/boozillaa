@@ -2,12 +2,14 @@ import axios from 'axios'
 
 export const state = () => ({
     productsList : [],
-    filter : {}
+    filter : {},
+    isLoading : true
 })
 
 export const mutations = {
     setProductsList(state, productsList) {
-        state.productsList = [...productsList]
+        state.productsList = [...productsList];
+        state.isLoading = false
     },
     //For Chips
     setFilter(state, filter) {
@@ -39,5 +41,8 @@ export const getters = {
     },
     filter(state) {
         return state.filter
+    },
+    isLoading(state) {
+        return state.isLoading
     }
 }

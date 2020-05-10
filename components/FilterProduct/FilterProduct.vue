@@ -1,5 +1,6 @@
 <template>
   <v-container>
+    <!--Desktop-->
     <v-row class="hidden-sm-and-down">
       <v-menu offset-y max-height="400">
         <template v-slot:activator="{ on }">
@@ -60,7 +61,24 @@
           </v-list-item>
         </v-list>
       </v-menu>
+      <v-spacer></v-spacer>
+      <v-menu offset-y max-height="400">
+        <template v-slot:activator="{ on }">
+          <v-btn width="175" class="ma-2" v-on="on" tile color="grey lighten-2">
+            <span>Sắp xếp theo</span>
+            <v-spacer />
+            <v-icon right>mdi-sort-variant</v-icon>
+          </v-btn>
+        </template>
+        <v-list>
+          <v-list-item v-for="(color,i) in colors" :key="i">
+            <v-checkbox v-model="color.checked" :label="`${color.title}`"></v-checkbox>
+          </v-list-item>
+        </v-list>
+      </v-menu>
     </v-row>
+
+    <!--Mobile-->
     <v-row class="hidden-md-and-up">
       <v-dialog v-model="dialog" fullscreen hide-overlay transition="dialog-bottom-transition">
         <template v-slot:activator="{ on }">
@@ -117,8 +135,22 @@
           >Lọc Sản Phẩm</v-btn>
         </v-card>
       </v-dialog>
+      <v-spacer></v-spacer>
+      <v-menu offset-y max-height="400">
+        <template v-slot:activator="{ on }">
+          <v-btn v-on="on" tile color="grey lighten-2">
+            <span>Sắp xếp theo</span>
+            <v-spacer />
+            <v-icon right>mdi-sort-variant</v-icon>
+          </v-btn>
+        </template>
+        <v-list>
+          <v-list-item v-for="(color,i) in colors" :key="i">
+            <v-checkbox v-model="color.checked" :label="`${color.title}`"></v-checkbox>
+          </v-list-item>
+        </v-list>
+      </v-menu>
     </v-row>
-
     <ChipList
       @closeTypeChip="closeTypeChip"
       @closeCharacterChip="closeCharacterChip"

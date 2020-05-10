@@ -241,6 +241,7 @@ export default {
   top: 55px;
   z-index: 2;
   width: 100%;
+  box-shadow: 0px 5px 8px 0 rgba(0,0,0,0.15);
 }
 
 .none-nest-link {

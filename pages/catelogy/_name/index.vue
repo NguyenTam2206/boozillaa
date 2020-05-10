@@ -4,7 +4,12 @@
     <BCCatelogy />
     <h1 class="text-center my-5">{{title}}</h1>
     <FilterProduct :rangeFilter="$route.params.name" />
-    <ProductsList :productsList="productsList"/>
+    <LoadProduct :quantity="8" v-if="isLoading" />
+    <ProductsList :productsList="productsList" />
+    <v-row justify="center" style="margin-bottom: 40px;">
+      <v-btn outlined width="300">Xem Thêm</v-btn>
+    </v-row>
+    <PageIconInfo />
   </v-container>
 </template>
 
@@ -12,11 +17,12 @@
 import BCCatelogy from "@/components/Breadcrums/BCCatelogy";
 import FilterProduct from "@/components/FilterProduct/FilterProduct";
 import ProductsList from "@/components/Products/ProductsList";
-//loading component
+import LoadProduct from "@/components/Products/LoadProduct";
+import PageIconInfo from "@/components/PageIconInfo/PageIconInfo";
 
 export default {
   data() {
-      return {}
+    return {};
   },
   computed: {
     title() {
@@ -43,15 +49,22 @@ export default {
     },
     productsList() {
       return this.$store.getters.productsList;
+    },
+    isLoading() {
+      return this.$store.getters.isLoading;
     }
   },
   components: {
     BCCatelogy,
     FilterProduct,
-    ProductsList
+    ProductsList,
+    LoadProduct,
+    PageIconInfo
   },
   created() {
-    this.$store.dispatch("getProducts", { rangeFilter: this.$route.params.name });
+    this.$store.dispatch("getProducts", {
+      rangeFilter: this.$route.params.name
+    });
   }
 };
 
