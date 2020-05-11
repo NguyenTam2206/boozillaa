@@ -67,10 +67,5 @@ export default {
     });
   }
 };
-
-// Logic Filter : Khi người dùng click vào các option filter => v-model input vào store 1 state.filter : [v-model input]
-// Bắt sự kiện mỗi lần + or - opitons filter sẽ action thay đổi state.filter và then getter lại sản phẩm đã filter
-// Hiển thị array products đó lên.
-// Lưu ý phạm vị sản phẩm (all or quan-ao,...)
 </script>
 

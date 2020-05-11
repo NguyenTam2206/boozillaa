@@ -80,9 +80,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
-
-    }
+    extend(config, ctx) {}
   },
   env: {
     apiUrl: 'http://api-boozilla.bazic.vn/' //process.env.apiUrl

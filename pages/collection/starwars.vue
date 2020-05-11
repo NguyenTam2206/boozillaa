@@ -16,19 +16,25 @@
 <script>
 import ProductsList from "@/components/Products/ProductsList";
 import LoadProduct from "@/components/Products/LoadProduct";
-// import axios from "axios";
+import axios from "axios";
 
 export default {
   components: {
     ProductsList,
     LoadProduct
   },
+  // data() {
+  //   return {
+  //     isLoading : true
+  //   }
+  // },
   // async asyncData(context) {
   //   const response = await axios.get("https://5e5b7f0f2faeae0014f92b43.mockapi.io/api/boo-products")
   //   const data = response.data
   //   console.log(data)
   //     return {
-  //       productsList : data
+  //       productsList : data,
+  //       isLoading : false
   //     }
   // },
   created() {
