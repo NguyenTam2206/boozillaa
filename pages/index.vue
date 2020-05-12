@@ -20,12 +20,14 @@
       </v-row>
       <v-row>
         <v-col cols="12" md="6">
+          <v-lazy>
           <img
             src="@/assets/imgs/bannerlefthome.png"
             alt="bannerlefthome"
             style="max-width: 100%; padding-top: 12px; cursor: pointer;"
             @click="$router.push('/collection/one-piece-stampede')"
           />
+          </v-lazy>
         </v-col>
         <v-col cols="12" md="6">
           <v-row>

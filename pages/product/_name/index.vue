@@ -1,7 +1,9 @@
 <template>
   <v-container>
     <BCProductDetail :name="$route.params.name" />
+    <v-lazy>
     <v-img :src="product.imgs[0]"></v-img>
+    </v-lazy>
   </v-container>
 </template>
 
