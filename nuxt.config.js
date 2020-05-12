@@ -1,7 +1,7 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-  mode: 'spa',
+  mode: 'universal',
   /*
   ** Headers of the page
   */
@@ -80,7 +80,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {}
+    extend(config, ctx) { }
   },
   env: {
     apiUrl: 'http://api-boozilla.bazic.vn/' //process.env.apiUrl
@@ -88,5 +88,5 @@ export default {
   router: {
     linkActiveClass: 'active-link',
     linkExactActiveClass: 'exact-active-link',
-  }
+  },
 }
